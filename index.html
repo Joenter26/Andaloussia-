@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andaloussia Language School - Master Languages with Certified Teachers</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+      <!-- SEO Meta Tags -->
+  <meta name="description" content="Andaloussia Language School in Oran offers professional English, French, German, and Spanish courses with certified teachers. Join us and master languages with confidence.">
+  <meta name="keywords" content="language school Oran, English course Oran, French classes, German, Spanish, Andaloussia, certified teachers, Algeria">
+  <meta name="author" content="Andaloussia Language School">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (for social media) -->
+  <meta property="og:title" content="Andaloussia Language School | Oran">
+  <meta property="og:description" content="Join Andaloussia Language School in Oran and unlock new opportunities through language. Certified teachers. English, French, German, Spanish.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourdomain.com/logo.jpg"> <!-- Optional: logo or hero image -->
+  <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with real URL later -->
+
+  <!-- Favicon (optional but pro) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="Professional language education in English, French, German, and Spanish at Andaloussia Language School in Oran, Algeria.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          overflow-x: hidden;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+          background: #fff;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 1000;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 2rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .nav-brand {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #102A68;
+        }
+
+        .nav-brand i {
+          margin-right: 0.5rem;
+          font-size: 1.8rem;
+        }
+
+        .brand-subtitle {
+          font-weight: normal;
+          font-size: 0.9rem;
+          color: #666;
+        }
+
+        .nav-menu {
+          display: flex;
+          list-style: none;
+          gap: 2rem;
+        }
+
+        .nav-link {
+          text-decoration: none;
+          color: #333;
+          font-weight: 500;
+          transition: color 0.3s ease;
+          position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+          color: #1e3a8a;
+        }
+
+        .nav-link.active::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #fbbf24;
+        }
+
+        .hamburger {
+          display: none;
+          flex-direction: column;
+          cursor: pointer;
+        }
+
+        .hamburger span {
+          width: 25px;
+          height: 3px;
+          background: #333;
+          margin: 3px 0;
+          transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+          background: #102A68;
+          color: white;
+          padding: 120px 0 80px;
+          text-align: center;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-content {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        .hero-title {
+          font-size: 3.5rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+          line-height: 1.2;
+        }
+
+        .hero-subtitle {
+          font-size: 1.2rem;
+          margin-bottom: 2.5rem;
+          opacity: 0.9;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .hero-buttons {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        /* Button Styles */
+        .btn {
+          display: inline-block;
+          padding: 12px 30px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          border: 2px solid transparent;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+
+        .btn-primary {
+          background: #fbbf24;
+          color: #1e3a8a;
+          border-color: #fbbf24;
+        }
+
+        .btn-primary:hover {
+          background: #f59e0b;
+          border-color: #f59e0b;
+          transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+          background: transparent;
+          color: white;
+          border-color: white;
+        }
+
+        .btn-secondary:hover {
+          background: white;
+          color: #1e3a8a;
+        }
+
+        .btn-course {
+          background: #1e3a8a;
+          color: white;
+          width: 100%;
+          text-align: center;
+        }
+
+        .btn-course:hover {
+          background: #1e40af;
+          transform: translateY(-2px);
+        }
+
+        .btn-full {
+          width: 100%;
+        }
+
+        /* Section Headers */
+        .section-header {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+          font-size: 2.5rem;
+          color: #1e3a8a;
+          margin-bottom: 0.5rem;
+        }
+
+        .section-line {
+          width: 60px;
+          height: 4px;
+          background: #fbbf24;
+          margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+          padding: 80px 0;
+          background: #f8fafc;
+        }
+
+        .about-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: start;
+        }
+
+        .about-text p {
+          margin-bottom: 1.5rem;
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #555;
+        }
+
+        .about-features {
+          margin-top: 2rem;
+        }
+
+        .feature-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+        }
+
+        .feature-icon {
+          background: #1e3a8a;
+          color: white;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1rem;
+          flex-shrink: 0;
+        }
+
+        .feature-content h4 {
+          color: #1e3a8a;
+          margin-bottom: 0.5rem;
+        }
+
+        .languages-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+        }
+
+        .language-card {
+          background: white;
+          padding: 2rem;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .language-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .language-flag {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #e5e7eb;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1rem;
+          font-weight: bold;
+          font-size: 1.2rem;
+          color: #1e3a8a;
+        }
+
+        .language-card h3 {
+          color: #1e3a8a;
+          margin-bottom: 0.5rem;
+        }
+
+        /* Courses Section */
+        .courses {
+          padding: 80px 0;
+          background: white;
+        }
+
+        .courses-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2rem;
+          margin-bottom: 4rem;
+        }
+
+        .course-card {
+          background: white;
+          border: 3px solid #fbbf24;
+          border-radius: 10px;
+          padding: 2rem;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-header {
+          margin-bottom: 1.5rem;
+        }
+
+        .course-flag {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1rem;
+          font-weight: bold;
+          font-size: 1.2rem;
+          color: white;
+          background: #fbbf24;
+        }
+
+        .course-header h3 {
+          color: #1e3a8a;
+          font-size: 1.5rem;
+        }
+
+        .course-features {
+          list-style: none;
+          margin-bottom: 2rem;
+          text-align: left;
+        }
+
+        .course-features li {
+          margin-bottom: 0.5rem;
+          display: flex;
+          align-items: center;
+        }
+
+        .course-features i {
+          color: #10b981;
+          margin-right: 0.5rem;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+          text-align: center;
+          margin-top: 4rem;
+        }
+
+        .why-choose h2 {
+          font-size: 2.5rem;
+          color: #1e3a8a;
+          margin-bottom: 3rem;
+        }
+
+        .benefits-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+        }
+
+        .benefit-card {
+          text-align: center;
+          padding: 2rem;
+        }
+
+        .benefit-icon {
+          width: 80px;
+          height: 80px;
+          background: #1e3a8a;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1.5rem;
+          font-size: 2rem;
+        }
+
+        .benefit-card h3 {
+          color: #1e3a8a;
+          margin-bottom: 1rem;
+        }
+
+        .benefit-card p {
+          color: #555;
+          line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+          padding: 80px 0;
+          background: #f8fafc;
+        }
+
+        .contact-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+        }
+
+        .contact-info p {
+          margin-bottom: 2rem;
+          font-size: 1.1rem;
+          color: #555;
+        }
+
+        .contact-methods {
+          margin-bottom: 2rem;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+
+        .contact-item:hover {
+          transform: translateX(5px);
+        }
+
+        .contact-item.whatsapp .contact-icon {
+          background: #25d366;
+        }
+
+        .contact-icon {
+          background: #1e3a8a;
+          color: white;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1rem;
+          flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+          color: #1e3a8a;
+          margin-bottom: 0.25rem;
+        }
+
+        .social-media {
+          margin-top: 2rem;
+        }
+
+        .social-media h4 {
+          color: #1e3a8a;
+          margin-bottom: 1rem;
+        }
+
+        .social-link {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: #1e3a8a;
+          color: white;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px;
+          margin-right: 0.5rem;
+          transition: background 0.3s ease;
+          text-decoration: none;
+        }
+
+        .social-link:hover {
+          background: #1e40af;
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+          background: white;
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-container h3 {
+          color: #1e3a8a;
+          margin-bottom: 1.5rem;
+          font-size: 1.5rem;
+        }
+
+        .form-group {
+          margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: #333;
+          font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+          width: 100%;
+          padding: 12px;
+          border: 2px solid #e5e7eb;
+          border-radius: 5px;
+          font-size: 1rem;
+          transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+          outline: none;
+          border-color: #1e3a8a;
+        }
+
+        .form-group textarea {
+          resize: vertical;
+          min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+          background: #1e3a8a;
+          color: white;
+          padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+          margin-bottom: 1rem;
+          color: white;
+        }
+
+        .footer-section p {
+          line-height: 1.6;
+          opacity: 0.9;
+        }
+
+        .footer-links {
+          list-style: none;
+        }
+
+        .footer-links li {
+          margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+          color: white;
+          text-decoration: none;
+          opacity: 0.9;
+          transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+          opacity: 1;
+        }
+
+        .footer-social {
+          margin-top: 1rem;
+        }
+
+        .opening-hours {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .hours-item {
+          display: flex;
+          justify-content: space-between;
+          opacity: 0.9;
+        }
+
+        .footer-bottom {
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          padding-top: 1rem;
+          text-align: center;
+          opacity: 0.8;
+        }
+
+        .designer-credit {
+          margin-top: 0.5rem;
+        }
+
+        .designer-credit span {
+          color: #fbbf24;
+          font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .hamburger {
+            display: flex;
+          }
+
+          .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            flex-direction: column;
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            padding: 2rem 0;
+          }
+
+          .nav-menu.active {
+            left: 0;
+          }
+
+          .hero-title {
+            font-size: 2.5rem;
+          }
+
+          .hero-buttons {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .hero-buttons .btn {
+            width: 200px;
+          }
+
+          .about-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .languages-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .courses-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .benefits-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .contact-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .footer-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
+
+          .hours-item {
+            justify-content: center;
+            gap: 1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-title {
+            font-size: 2rem;
+          }
+
+          .hero-subtitle {
+            font-size: 1rem;
+          }
+
+          .section-header h2 {
+            font-size: 2rem;
+          }
+
+          .navbar {
+            padding: 1rem;
+          }
+
+          .container {
+            padding: 0 15px;
+          }
+        }
+
+        /* Smooth Scrolling */
+        html {
+          scroll-behavior: smooth;
+        }
+
+        /* Notification Styles */
+        .notification {
+          position: fixed;
+          top: 100px;
+          right: 20px;
+          background: #10b981;
+          color: white;
+          padding: 1rem 1.5rem;
+          border-radius: 5px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          max-width: 400px;
+          animation: slideIn 0.3s ease;
+        }
+
+        .notification-error {
+          background: #ef4444;
+        }
+
+        .notification-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .notification-close {
+          background: none;
+          border: none;
+          color: white;
+          font-size: 1.5rem;
+          cursor: pointer;
+          margin-left: 1rem;
+        }
+
+        @keyframes slideIn {
+          from { transform: translateX(100%); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+        .logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+@keyframes fadeFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+@keyframes floatLoop {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+.hero-logo {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin: 0 auto 1.5rem;
+  max-width: 100%;
+  animation: fadeFloat 3s ease-in-out forwards, floatLoop 3s ease-in-out 3s infinite;
+}
+
+
+
+@media (max-width: 600px) {
+  .hero-logo {
+    height: 160px;
+    margin-bottom: 1rem;
+  }
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* WhatsApp green only on hover */
+.whatsapp-link:hover i {
+  color: #25D366;
+}
+/* Facebook hover: official blue */
+.social-link.facebook-link:hover i {
+  color: #1877F2; /* Facebook blue */
+}
+
+/* Instagram hover: multicolor gradient */
+.instagram-link:hover i {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.4s ease;
+}
+ .image-gallery-section {
+  padding: 4rem 2rem;
+  background-color: #f1f5f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+ .slider-section {
+  padding: 3rem 0;
+  background: #f1f5f9;
+  text-align: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+  display: flex;
+  animation: scrollSlider 28s linear infinite;
+  width: max-content;
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused !important;
+}
+
+
+.slider-img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+/* Animation */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.slider-section {
+  background: #f1f5f9;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.slider-container {
+  max-width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+  display: flex;
+  animation: scrollSlider 28s linear infinite;
+  width: max-content;
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused !important;
+}
+
+
+.slider-img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  margin: 0 6px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.slider-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.footer-map {
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+          <div class="nav-brand">
+  <i class="fas fa-graduation-cap"></i>
+  <span>Andaloussia <span class="brand-subtitle">Language School</span></span>
+</div>
+
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+    <img src="logo.png" alt="Andaloussia Logo" class="hero-logo">
+    <h1 class="hero-title">Master Languages with<br>Certified Teachers</h1>
+            <p class="hero-subtitle">Unlock new opportunities with professional language education in English, French, German, and Spanish at Andaloussia Language School in Oran.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Andaloussia</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Andaloussia Language School is a premier institution dedicated to language education excellence in Oran. We offer comprehensive courses for both children and adults, taught by certified native speakers and experienced educators.</p>
+                    <p>Our programs are designed for all proficiency levels — from absolute beginners to advanced learners — and combine traditional teaching methods with modern, interactive approaches to ensure effective and engaging learning outcomes.</p>
+                    <div class="about-features">
+                        <div class="feature-item scroll-reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Certified Teachers</h4>
+                                <p>Native speakers and qualified educators</p>
+                            </div>
+                        </div>
+                        <div class="feature-item scroll-reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Small Class Sizes</h4>
+                                <p>Personalized attention for every student</p>
+                            </div>
+                        </div>
+                        <div class="feature-item scroll-reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Modern Facilities</h4>
+                                <p>Equipped with the latest learning technology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="languages-grid">
+                    <div class="language-card scroll-reveal">
+                        <div class="language-flag">GB</div>
+                        <h3>English</h3>
+                        <p>From beginner to advanced proficiency levels</p>
+                    </div>
+                    <div class="language-card scroll-reveal">
+                        <div class="language-flag">FR</div>
+                        <h3>French</h3>
+                        <p>Comprehensive courses for all skill levels</p>
+                    </div>
+                    <div class="language-card scroll-reveal">
+                        <div class="language-flag">DE</div>
+                        <h3>German</h3>
+                        <p>Structured learning path with cultural insights</p>
+                    </div>
+                    <div class="language-card scroll-reveal">
+                        <div class="language-flag">ES</div>
+                        <h3>Spanish</h3>
+                        <p>Immersive learning experience for all ages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+  <section id="gallery" class="slider-section">
+  <div class="slider-track">
+    <img src="img1.jpeg" class="slider-img" alt="Image 1">
+    <img src="img2.jpeg" class="slider-img" alt="Image 2">
+    <img src="img3.jpeg" class="slider-img" alt="Image 3">
+    <img src="img4.jpeg" class="slider-img" alt="Image 4">
+    <img src="img5.jpeg" class="slider-img" alt="Image 5">
+    <img src="img6.jpeg" class="slider-img" alt="Image 6">
+    <img src="img7.jpeg" class="slider-img" alt="Image 7">
+
+    <!-- 🔁 Repeat -->
+    <img src="img1.jpeg" class="slider-img" alt="Image 1">
+    <img src="img2.jpeg" class="slider-img" alt="Image 2">
+    <img src="img3.jpeg" class="slider-img" alt="Image 3">
+    <img src="img4.jpeg" class="slider-img" alt="Image 4">
+    <img src="img5.jpeg" class="slider-img" alt="Image 5">
+    <img src="img6.jpeg" class="slider-img" alt="Image 6">
+    <img src="img7.jpeg" class="slider-img" alt="Image 7">
+  </div>
+</section>
+
+
+
+
+            <!-- Why Choose Our Courses -->
+            <div class="why-choose">
+                <h2>Why Choose Our Courses?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card scroll-reveal">
+                        <div class="benefit-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Comprehensive Curriculum</h3>
+                        <p>Our courses cover all language skills: speaking, listening, reading, and writing with cultural context.</p>
+                    </div>
+                    <div class="benefit-card scroll-reveal">
+                        <div class="benefit-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Certified Results</h3>
+                        <p>Prepare for internationally recognized language certifications with our specialized exam preparation courses.</p>
+                    </div>
+                    <div class="benefit-card scroll-reveal">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Flexible Learning</h3>
+                        <p>Choose from morning, evening, weekend, or intensive courses to fit your schedule and learning pace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Have questions about our courses or want to enroll? Get in touch with us using any of the following methods:</p>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                               <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+                               <p>Rue Med Khemisti N°19, en face du restaurant Bab El Rayan, Oran</p>
+
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                               <h4><i class="fas fa-phone"></i> Phone</h4>
+                              <p>0797 52 46 21</p>
+
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4><i class="fas fa-envelope"></i> Email</h4>
+                                <p>Chahraouiamel2022@gmail.com</p>
+
+                            </div>
+                        </div>
+                        <div class="contact-item whatsapp" onclick="openWhatsApp()">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+213659212869</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+
+<a href="https://www.facebook.com/www.andaloussia.net/?locale=ar_AR" class="social-link facebook-link" target="_blank">
+  <i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/andaloussia.ecole/" class="social-link instagram-link" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="https://wa.me/213659212869" class="social-link whatsapp-link" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form action="https://formsubmit.co/Chahraouiamel2022@gmail.com" method="POST" class="contact-form">
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Interested Course</label>
+                            <select id="course" name="course">
+                                <option value="">Select a course</option>
+                                <option value="english">English</option>
+                                <option value="french">French</option>
+                                <option value="german">German</option>
+                                <option value="spanish">Spanish</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="box">
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+<div class="footer-map">
+  <h4 style="margin-top: 1rem;">Retrouvez-nous sur la carte</h4>
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.51642776323393!2d-0.6431772838164665!3d35.702940457754224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e88fc5dbd0e1f%3A0x3aed59aa463f66c3!2sAndaloussia!5e1!3m2!1sar!2sdz!4v1751563864773!5m2!1sar!2sdz" 
+    width="100%" 
+    height="250" 
+    style="border:0; border-radius: 10px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <div class="opening-hours">
+                        <div class="hours-item">
+                            <span>Dimanche</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Lundi</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Mardi</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Mercredi</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                          <div class="hours-item">
+                            <span>Jeudi</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>  <div class="hours-item">
+                            <span>Vendredi</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                        </div>  <div class="hours-item">
+                            <span>Samedi</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Andaloussia Language School. All rights reserved.</p>
+                <p class="designer-credit">Designed by <span>OUSSJOO</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active")
+                navMenu.classList.toggle("active")
+            })
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll(".nav-link").forEach((n) =>
+                n.addEventListener("click", () => {
+                    hamburger.classList.remove("active")
+                    navMenu.classList.remove("active")
+                }),
+            )
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault()
+                const target = document.querySelector(this.getAttribute("href"))
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    })
+                }
+            })
+        })
+
+        // Active navigation link highlighting
+        window.addEventListener("scroll", () => {
+            let current = ""
+            const sections = document.querySelectorAll("section")
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop
+                const sectionHeight = section.clientHeight
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute("id")
+                }
+            })
+
+            document.querySelectorAll(".nav-link").forEach((link) => {
+                link.classList.remove("active")
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active")
+                }
+            })
+        })
+
+        // WhatsApp Functions
+        function openWhatsApp(message = "Hello! I would like to know more about your language courses.") {
+            const whatsappNumber = "+213XXXXXXXXX" // Replace with actual number
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+            window.open(whatsappURL, "_blank")
+        }
+
+        // Contact Form Handling
+        const contactForm = document.getElementById("contactForm")
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", (e) => {
+                e.preventDefault()
+
+                // Validate form
+                if (!validateForm()) {
+                    showNotification("Please fill in all required fields.", "error")
+                    return
+                }
+
+                // Get form data
+                const formData = new FormData(contactForm)
+                const fullName = formData.get("fullName")
+                const email = formData.get("email")
+                const phone = formData.get("phone")
+                const course = formData.get("course")
+                const message = formData.get("message")
+
+                // Validate email
+                if (!validateEmail(email)) {
+                    showNotification("Please enter a valid email address.", "error")
+                    document.getElementById("email").style.borderColor = "#ef4444"
+                    return
+                }
+
+                // Create WhatsApp message
+                const whatsappMessage = `Hello! I'm interested in your language courses.
+
+📝 Contact Details:
+Name: ${fullName}
+Email: ${email}
+Phone: ${phone || "Not provided"}
+
+📚 Course Interest: ${course || "Not specified"}
+
+💬 Message: ${message || "No additional message"}
+
+I would like to learn more about enrollment and class schedules.`
+
+                // Open WhatsApp
+                openWhatsApp(whatsappMessage)
+
+                // Show success message
+                showNotification("Message prepared for WhatsApp! Please send it to complete your inquiry.", "success")
+
+                // Reset form
+                contactForm.reset()
+            })
+        }
+
+        // Form validation
+        function validateForm() {
+            const requiredFields = document.querySelectorAll("#contactForm [required]")
+            let isValid = true
+
+            requiredFields.forEach((field) => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = "#ef4444"
+                    isValid = false
+                } else {
+                    field.style.borderColor = "#e5e7eb"
+                }
+            })
+
+            return isValid
+        }
+
+        // Email validation
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            return re.test(email)
+        }
+
+        // Notification System
+        function showNotification(message, type = "info") {
+            // Remove existing notifications
+            const existingNotification = document.querySelector(".notification")
+            if (existingNotification) {
+                existingNotification.remove()
+            }
+
+            // Create notification element
+            const notification = document.createElement("div")
+            notification.className = `notification ${type === "error" ? "notification-error" : ""}`
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <span>${message}</span>
+                    <button class="notification-close">&times;</button>
+                </div>
+            `
+
+            document.body.appendChild(notification)
+
+            // Close button functionality
+            const closeBtn = notification.querySelector(".notification-close")
+            closeBtn.addEventListener("click", () => {
+                notification.remove()
+            })
+
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove()
+                }
+            }, 5000)
+        }
+
+        // Course enrollment buttons
+        document.querySelectorAll(".btn-course").forEach((btn) => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault()
+
+                // Get the course name from the card
+                const courseCard = this.closest(".course-card")
+                const courseName = courseCard.querySelector("h3").textContent
+
+                // Scroll to contact form
+                document.querySelector("#contact").scrollIntoView({
+                    behavior: "smooth",
+                })
+
+                // Pre-select the course in the form
+                setTimeout(() => {
+                    const courseSelect = document.querySelector("#course")
+                    const courseValue = courseName.toLowerCase()
+                    if (courseSelect) {
+                        courseSelect.value = courseValue
+                        courseSelect.focus()
+                    }
+                }, 1000)
+
+                showNotification(`Great choice! Please fill out the contact form below to enroll in ${courseName}.`, "info")
+            })
+        })
+
+        // Header background change on scroll
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header")
+            if (window.scrollY > 100) {
+                header.style.background = "rgba(255, 255, 255, 0.95)"
+                header.style.backdropFilter = "blur(10px)"
+            } else {
+                header.style.background = "#fff"
+                header.style.backdropFilter = "none"
+            }
+        })
+        const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elementsToReveal = document.querySelectorAll(".scroll-reveal");
+  elementsToReveal.forEach(el => observer.observe(el));
+});
+
+    </script>
+</body>
+</html>
