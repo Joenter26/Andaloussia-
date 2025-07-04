@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andaloussia Language School - Master Languages with Certified Teachers</title>
       <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Andaloussia Language School – Oran">
-  <meta property="og:description" content="Cours de langues pour enfants et adultes – Tous niveaux, enseignement de qualité à Oran.">
+  <meta property="og:title" content="Andaloussia École de Langues – Oran">
+  <meta property="og:description" content="Cours de langues pour enfants et adultes – Tous niveaux – Anglais, Français, Espagnol.">
   <meta property="og:image" content="https://joenter26.github.io/Andaloussia-/preview.jpg">
   <meta property="og:url" content="https://joenter26.github.io/Andaloussia-/">
   <meta property="og:type" content="website">
@@ -987,48 +987,58 @@
   border-radius: 10px;
   overflow: hidden;
 }
-/* === RESPONSIVE DESIGN === */
+/* === Responsive Design for Mobile (Max width 768px) === */
 @media (max-width: 768px) {
-  /* Hero section */
+
+  /* HERO SECTION */
   .hero-content {
     padding: 2rem 1rem;
     text-align: center;
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-content p {
     font-size: 1rem;
   }
 
-  /* About section */
+  /* ABOUT SECTION */
   .about-features {
     flex-direction: column;
+    gap: 2rem;
     align-items: center;
-    gap: 1.5rem;
   }
 
   .feature {
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
+    max-width: 340px;
   }
 
-  /* Slider section */
+  /* IMAGE SLIDER */
+  .slider-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
   .slider-img {
     width: 250px;
     height: auto;
+    scroll-snap-align: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
   }
 
-  /* Contact section */
+  /* CONTACT FORM */
   .contact-form input,
   .contact-form textarea,
   .contact-form select {
     width: 100%;
+    box-sizing: border-box;
     padding: 0.75rem;
     font-size: 1rem;
-    box-sizing: border-box;
   }
 
   .contact-form button {
@@ -1036,28 +1046,24 @@
     font-size: 1rem;
   }
 
-  /* Footer */
+  /* FOOTER + MAP */
   .footer {
     text-align: center;
     padding: 2rem 1rem;
+    font-size: 0.9rem;
   }
 
   .footer-map iframe {
-    width: 100%;
-    height: 200px;
+    width: 100% !important;
+    height: 200px !important;
   }
+}
+
 
   .social-link {
     margin: 0 0.5rem;
     font-size: 1.4rem;
   }
-}
-
-
-
-
-
-
     </style>
 </head>
 <body>
