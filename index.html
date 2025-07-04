@@ -478,10 +478,6 @@
           transform: translateX(5px);
         }
 
-        .contact-item.whatsapp .contact-icon {
-          background: #25d366;
-        }
-
         .contact-icon {
           background: #1e3a8a;
           color: white;
@@ -1064,6 +1060,25 @@
     margin: 0 0.5rem;
     font-size: 1.4rem;
   }
+  .designer-credit {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffffffb0;
+  margin-top: 1.5rem;
+}
+
+.designer-credit a {
+  color: #fbbf24;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.designer-credit a:hover {
+  color: #ffe066;
+  text-decoration: underline;
+}
+
     </style>
 </head>
 <body>
@@ -1258,19 +1273,10 @@
                             </div>
                             <div class="contact-details">
                                 <h4><i class="fas fa-envelope"></i> Email</h4>
-                                <p>Chahraouiamel2022@gmail.com</p>
+                                <p>Andaloussiaecole2024@gmail.com</p>
 
                             </div>
-                        </div>
-                        <div class="contact-item whatsapp" onclick="openWhatsApp()">
-                            <div class="contact-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>WhatsApp</h4>
-                                <p>+213659212869</p>
-                            </div>
-                        </div>
+                      
                     </div>
                     <div class="social-media">
                         <h4>Follow Us</h4>
@@ -1398,7 +1404,8 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Andaloussia Language School. All rights reserved.</p>
-                <p class="designer-credit">Designed by <span>OUSSJOO</span></p>
+                <p class="designer-credit"> Designed by <a href="https://joenter26.github.io/portfolio/" target="_blank">OUSSJOO</a></p>
+
             </div>
         </div>
     </footer>
@@ -1457,13 +1464,6 @@
                 }
             })
         })
-
-        // WhatsApp Functions
-        function openWhatsApp(message = "Hello! I would like to know more about your language courses.") {
-            const whatsappNumber = "+213XXXXXXXXX" // Replace with actual number
-            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
-            window.open(whatsappURL, "_blank")
-        }
 
         // Contact Form Handling
         const contactForm = document.getElementById("contactForm")
